@@ -124,14 +124,16 @@ There are two ways to issue the access token.
 
     ![](screenshots/oauth3.gif)
 
-1. Click "Install App to Team".
+1. Click "Install App to Workspace".
 
     ![](screenshots/oauth4.gif)
 
 1. Visit <https://slack.com/oauth/authorize?&client_id=CLIENT_ID&team=TEAM_ID&install_redirect=install-on-team&scope=admin+client> in your browser and authorize it.
     * It authorizes the `client` permission. Otherwise, you can see `{"ok":false,"error":"missing_scope","needed":"client","provided":"admin"}` error.
-    * Your `CLIENT_ID` could be found in "Basic Information" menu of your app page that you just install.
-    * Your `TEAM_ID` could be found in <https://api.slack.com/methods/team.info/test>
+    * Your `TEAM_ID` is the subdomain for your slack team, e.g. myteam.slack.com - your TEAM_ID is `myteam`.
+    * Your `CLIENT_ID` found in "Basic Information" section for your App.
+
+    ![](screenshots/basic_info-client_id.png)
 
 ## Badge
 
