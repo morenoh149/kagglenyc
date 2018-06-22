@@ -35,7 +35,8 @@ float: left;
 
 .header{
 	margin-top: 160px;
-	margin-bottom: 40px;
+  padding-bottom: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -96,7 +97,7 @@ margin-top: 20px;
 background: url(../images/field.png) repeat;
 width: 448px;
 -webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
-border: none;
+border: 1px solid white;
 font-style: italic;
 font-family: 'Lato', sans-serif;
 font-size: 16px;
