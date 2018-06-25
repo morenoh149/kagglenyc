@@ -31,3 +31,5 @@ node_modules
 .env.*
 .idea/
 .envrc
+
+.DS_Store

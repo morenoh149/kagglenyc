@@ -10,18 +10,32 @@ html
     #wrapper
       .main
         .header
-          h1
-            strong #{community}
-          h2 #{__('HEADER', community)}
+          h1 KaggleNYC
+          h2#headline A group of Data Scientists, Data Engineers and Machine Learning Engineers in New York City that gather to practice through Kaggle Competitions.
         .content
           .information
+            h2#cta Join Us!
             form(method="POST", action="/invite")#join-form.form
               input(type="email", name="email", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
               if tokenRequired
                 input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
-              input(type="submit", value="Join").submit
+              input(type="submit", value="Invite Me!").submit
               if !!recaptchaSiteKey
                 div(class="g-recaptcha", data-sitekey="#{recaptchaSiteKey}")
+            p <sub>We do not store your email.</sub>
+          p
+            | We meet every Monday at 
+            a(href='https://goo.gl/maps/uYsHcrefq2G2' target='_blank') 59th st Columbus Circle Whole Foods
+            |  cafeteria 7pm to 9pm.
+          p All levels are welcome.
+          p
+            | Currently Competing: 
+            a(href='https://www.kaggle.com/c/freesound-audio-tagging' target='_blank') Freesound General-Purpose Audio Tagging Challenge
+            |  ends July 31, 2018.
+          p
+            | This site runs a modified version of 
+            a(href='https://github.com/outsideris/slack-invite-automation' target='_blank') Slack invite automation
+
     if !!recaptchaSiteKey
        script(src='https://www.google.com/recaptcha/api.js')
     script.
