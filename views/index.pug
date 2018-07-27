@@ -3,6 +3,12 @@ html
 
   head
     meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+    script
+      | window.dataLayer = window.dataLayer || [];
+      | function gtag(){dataLayer.push(arguments);}
+      | gtag('js', new Date());
+      | gtag('config', 'UA-42985946-9');
+    script(async, src="https://www.googletagmanager.com/gtag/js?id=UA-42985946-9")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     meta(name="description", content="A machine learning community based out of New York City.")
     meta(property="og:title", content="Kaggle NYC Group")
