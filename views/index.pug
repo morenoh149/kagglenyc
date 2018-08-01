@@ -30,25 +30,21 @@ html
           .information
             h2#cta Join Us!
             form(method="POST", action="/invite")#join-form.form
-              input(type="email", name="email", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
+              input(type="email", name="email", autofocus, placeholder=__('ENTER_EMAIL'))#slack-email.field
               if tokenRequired
-                input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
+                input(type="text", name="token", placeholder=__('ENTER_TOKEN'))#slack-token.field
               input(type="submit", value="Invite Me!").submit
               if !!recaptchaSiteKey
                 div(class="g-recaptcha", data-sitekey="#{recaptchaSiteKey}")
             p <sub>We do not store your email.</sub>
           p
-            | We meet every Monday at 
-            a(href='https://goo.gl/maps/uYsHcrefq2G2' target='_blank') 59th st Columbus Circle Whole Foods
-            |  cafeteria 7pm to 9pm.
+            | Next Meetup August 14th, 6-8pm 
+            a(href='https://www.meetup.com/Kaggle-NYC/events/253388831/' target='_blank') WeWork 575 5th Avenue · New York Room 14C.
           p All levels are welcome.
           p
             | Currently Competing: 
-            a(href='https://www.kaggle.com/c/freesound-audio-tagging' target='_blank') Freesound General-Purpose Audio Tagging Challenge
-            |  ends July 31, 2018.
-          p
-            | This site runs a modified version of 
-            a(href='https://github.com/outsideris/slack-invite-automation' target='_blank') Slack invite automation
+            a(href='https://www.kaggle.com/c/santander-value-prediction-challenge' target='_blank') Santander Value Prediction Challenge
+            |  ends August 20, 2018.
 
     if !!recaptchaSiteKey
        script(src='https://www.google.com/recaptcha/api.js')
