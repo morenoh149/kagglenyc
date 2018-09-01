@@ -14,6 +14,11 @@ router.get('/', function(req, res) {
                         recaptchaSiteKey: config.recaptchaSiteKey });
 });
 
+router.get('/resources', function(req, res) {
+  res.setLocale(config.locale);
+  res.render('resources', {});
+});
+
 router.post('/invite', function(req, res) {
   if (req.body.email && (!config.inviteToken || (!!config.inviteToken && req.body.token === config.inviteToken))) {
     function doInvite() {
