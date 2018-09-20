@@ -19,6 +19,11 @@ router.get('/resources', function(req, res) {
   res.render('resources', {});
 });
 
+router.get('/hiring', function(req, res) {
+  res.setLocale(config.locale);
+  res.render('hiring', {});
+});
+
 router.post('/invite', function(req, res) {
   if (req.body.email && (!config.inviteToken || (!!config.inviteToken && req.body.token === config.inviteToken))) {
     function doInvite() {

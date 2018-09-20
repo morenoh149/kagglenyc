@@ -55,6 +55,9 @@ h1 {
   font-weight: 700;
   padding: 1em 0;
 }
+h1.hiring {
+  text-align: left;
+}
 
 h2 {
   text-align: center;
@@ -192,4 +195,22 @@ a:hover {
 
 #nav {
   padding: 5px;
+}
+
+form#contact-form {
+  display: grid;
+}
+form#contact-form label {
+  padding: 0 5px;
+}
+form button {
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #eee;
+  border-radius: 10px;
+  border: 2px solid #59226b;
+  color: #59226b;
+  padding: 0.6em;
+  text-decoration: none;
+  transition-duration: 0.4s;
 }

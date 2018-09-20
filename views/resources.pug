@@ -1,37 +1,15 @@
 doctype html
 html
-
   head
-    meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
-    script
-      | window.dataLayer = window.dataLayer || [];
-      | function gtag(){dataLayer.push(arguments);}
-      | gtag('js', new Date());
-      | gtag('config', 'UA-42985946-9');
-    script(async, src="https://www.googletagmanager.com/gtag/js?id=UA-42985946-9")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
+    include _head_common.pug
     meta(name="description", content="Machine learning resources")
     meta(property="og:title", content="Kaggle NYC | Resources")
     meta(property="og:description", content="Machine learning resources")
     meta(property="og:image", content="http://kagglenyc.com/images/preview.png")
-    meta(property="og:url", content="http://kagglenyc.com")
+    meta(property="og:url", content="http://kagglenyc.com/resources")
     title Kaggle NYC | Resources
-    link(href="css/style.css", rel="stylesheet", type="text/css")
-    link(href="//fonts.googleapis.com/css?family=Lato:300,400,700,900,700italic|Open+Sans:700italic,400,600,300,700,800", rel="stylesheet", type="text/css")
-    link(rel="shortcut-icon", type="image/x-icon", href="/favicon.ico")
-
   body
-    .wrapper
-      #nav
-        a(href="/") Index
-        |  | 
-        a(href="/resources") Resources
-        |  | 
-        a(target="_blank", href="https://medium.com/kaggle-nyc") Blog
-        |  | 
-        a(target="_blank", href="https://www.linkedin.com/groups/12130274") LinkedIn Group
-        |  | 
-        a(target="_blank", href="https://www.facebook.com/groups/kagglenyc/") Facebook Group
+    include _nav.pug
     .wrapper.resources
       .main
         .header
@@ -48,6 +26,11 @@ html
             img(border="0", src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1617294438&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=harryswebsite-20")
             p Deep Learning with Python
           img(src="//ir-na.amazon-adsystem.com/e/ir?t=harryswebsite-20&l=am2&o=1&a=1617294438")
+        div
+          a(href="https://www.amazon.com/Reinforcement-Learning-Introduction-Adaptive-Computation/dp/0262193981/ref=as_li_ss_il?ie=UTF8&qid=1537460023&sr=8-3&keywords=reinforcement+learning&linkCode=li3&tag=mobile061c87b-20&linkId=df0b72b97418cd29aceb6813413764c3&language=en_US", target="_blank")
+            img(border="0", src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0262193981&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=mobile061c87b-20&language=en_US")
+            p Reinforcement Learning
+          img(src="https://ir-na.amazon-adsystem.com/e/ir?t=mobile061c87b-20&language=en_US&l=li3&o=1&a=0262193981")
         div
           a(target="_blank", href="https://www.amazon.com/gp/product/1491914254/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1491914254&linkCode=as2&tag=harryswebsite-20&linkId=686bfa30fee94927c376e304aaaa845c")
             img(border="0", src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1491914254&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=harryswebsite-20")
@@ -77,11 +60,6 @@ html
             img(border="0", src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1491957662&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=mobile061c87b-20&language=en_US")
             p Python for Data Analysis
           img(src="https://ir-na.amazon-adsystem.com/e/ir?t=mobile061c87b-20&language=en_US&l=li2&o=1&a=1491957662")
-        div
-          a(href="https://www.amazon.com/Reinforcement-Learning-Introduction-Adaptive-Computation/dp/0262193981/ref=as_li_ss_il?ie=UTF8&qid=1537460023&sr=8-3&keywords=reinforcement+learning&linkCode=li3&tag=mobile061c87b-20&linkId=df0b72b97418cd29aceb6813413764c3&language=en_US", target="_blank")
-            img(border="0", src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0262193981&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=mobile061c87b-20&language=en_US")
-            p Reinforcement Learning
-          img(src="https://ir-na.amazon-adsystem.com/e/ir?t=mobile061c87b-20&language=en_US&l=li3&o=1&a=0262193981")
       h2 🎞 Videos
       .grid
         div

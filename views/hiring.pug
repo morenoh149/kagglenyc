@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    include _head_common.pug
+    <!-- title #{__('TITLE', community)} -->
+    title Kaggle NYC | Hiring solutions
+  body
+    include _nav.pug
+    .wrapper
+      .main
+        h1.hiring Hiring Solutions
+        p This is where talented data professionals become talented data professionals. KNYC matches talent with companies. People interested in data find us. We help candidates develop job skills. And we only refer qualified candidates. We are are longterm thinking and are developing lifelong relationships in New York.
+        h2 Get in Touch
+        form(action="https://formspree.io/morenoh149@gmail.com", method="POST", id="contact-form")
+          label(for="form-name") Name:
+          input(id="form-name", type="text", name="name")
+          br
+          label(for="form-email") Email
+          input(id="form-email", type="email", name="_replyto")
+          br
+          p Select Type
+          div
+            input(type="radio", id="jobseeker", name="contact", value="jobseeker", checked)
+            label(for="jobseeker") Job Seeker
+            input(type="radio", id="employer", name="contact", value="employer")
+            label(for="employer") Hiring Talent
+          br
+          label(for="form-message") Message
+          textarea(id="form-message", name="contact-form", rows="10")
+          br
+          button(type="submit") Send
