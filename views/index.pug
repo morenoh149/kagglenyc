@@ -21,7 +21,7 @@ html
     link(rel="shortcut-icon", type="image/x-icon", href="/favicon.ico")
 
   body
-    #wrapper
+    .wrapper
       #nav
         a(href="/") Index
         |  | 
@@ -32,14 +32,14 @@ html
         a(target="_blank", href="https://www.linkedin.com/groups/12130274") LinkedIn Group
         |  | 
         a(target="_blank", href="https://www.facebook.com/groups/kagglenyc/") Facebook Group
-    #wrapper
+    .wrapper
       .main
         .header
           h1 KaggleNYC
           h2#headline A group of Data Scientists, Data Engineers and Machine Learning Engineers in New York City that gather to practice through Kaggle Competitions.
         .content
           .information
-            h2#cta Join Us!
+            h2#cta Join Us in Slack!
             form(method="POST", action="/invite")#join-form.form
               input(type="email", name="email", autofocus, placeholder=__('ENTER_EMAIL'))#slack-email.field
               if tokenRequired

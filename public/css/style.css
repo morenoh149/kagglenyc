@@ -18,7 +18,7 @@ body {
   color: #333;
 }
 
-#wrapper {
+.wrapper {
   max-width: 100%;
   width: 940px;
   margin: 0 auto;
@@ -28,6 +28,7 @@ body {
 .main {
   max-width: 550px;
   margin: 0 auto;
+  font-weight: 600;
 }
 
 .header, .content, .bottom, .sep2 {
@@ -35,7 +36,6 @@ body {
 }
 
 .content {
-  font-weight: 300;
   font-size: 16px;
   padding-bottom: 1em;
 }
@@ -52,19 +52,17 @@ h1 {
   font-family: monospace;
   text-align: center;
   font-size: 50px;
-  font-weight: 300;
   font-weight: 700;
   padding: 1em 0;
 }
 
 h2 {
   text-align: center;
-  font-weight: 300;
   font-size: 18px;
+  font-weight: 600;
 }
 
 h2#cta {
-  font-weight: 700;
   font-size: 32px;
   font-style: italic;
   padding-bottom: 15px;
@@ -159,11 +157,9 @@ a:hover {
   margin: auto;
 }
 
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-
-p.headline {
+#headline {
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .grid {
@@ -187,6 +183,7 @@ p.headline {
 
 .grid img {
   max-width: 100%;
+  max-height: 220px;
 }
 .resources h2 {
   text-align: left;
