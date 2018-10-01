@@ -1,3 +1,17 @@
+# KNYC site
+microsite for kaggle nyc. Allows visitors to invite themselves to slack and provides links to resources. It is a standard node.js, express site with [Pug](https://pugjs.org/) templates.
+
+## Installation
+1. npm install
+1. npm start
+
+Open localhost:3000 in a browser to see the main page.
+
+
+
+
+# Original README
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Slack Invite Automation
 ------------
 
