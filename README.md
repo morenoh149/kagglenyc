@@ -11,7 +11,7 @@ Open localhost:3000 in a browser to see the main page.
 
 
 # Original README
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Slack Invite Automation
 ------------
 
