@@ -14,14 +14,19 @@ router.get('/', function(req, res) {
                         recaptchaSiteKey: config.recaptchaSiteKey });
 });
 
-router.get('/resources', function(req, res) {
+router.get('/data-fest-2019', function(req, res) {
   res.setLocale(config.locale);
-  res.render('resources', {});
+  res.render('data-fest-2019', {});
 });
 
 router.get('/hiring', function(req, res) {
   res.setLocale(config.locale);
   res.render('hiring', {});
+});
+
+router.get('/resources', function(req, res) {
+  res.setLocale(config.locale);
+  res.render('resources', {});
 });
 
 router.post('/invite', function(req, res) {
