@@ -30,6 +30,12 @@ body {
   margin: 0 auto;
   font-weight: 600;
 }
+.main.datafest {
+  max-width: 600px;
+}
+.main.datafest p {
+  padding-top: 10px;
+}
 
 .header, .content, .bottom, .sep2 {
   width: 100%;

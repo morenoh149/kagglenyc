@@ -3,10 +3,25 @@ html
   head
     include _head_common.pug
     <!-- title #{__('TITLE', community)} -->
-    title Kaggle NYC | Data Fest 2019
+    title Kaggle NYC | DataFest NYC 2019
   body
     include _nav.pug
     .wrapper
-      .main
-        h1 Data Fest 2019
-        p Data Fest is coming to NYC! Get ready for a weekend full of data analysis, curated by New York tech companies and University professors. If you'd like to be involved as a sponsor or judge please chat with us in slack.
+      .main.datafest
+        <!-- consult https://projects.iq.harvard.edu/datafest2018/schedule -->
+        h1 DataFest NYC 2019
+        p
+        | A Data Science bootcamp for better research. DataFest is coming to NYC! Get ready for a weekend full of data analysis, curated by New York City tech companies and University professors. If you'd like to be involved as a sponsor or judge please ping us in slack. Twitter 
+        a(href="https://twitter.com/search?f=tweets&q=datafestnyc&src=typd") #datafestnyc
+        | .
+        p
+        | DataFest is a two-day workshop held during the Fall and developed by data practitioners and researchers from across new york city. The purpose of the workshop is for participants to develop skills in working with data. It is structured around the data lifecycle, includes lectures and hands-on sessions focused on data concepts, project planning and data science workflows, processing and analysis, and finally data dissemination. It is offered to undergraduate students and information workers in new york. The curriculum complements competitions on 
+        a(href="http://kaggle.com") Kaggle
+        | .
+      br 
+      h2 Schedule
+      .schedule
+        .day-1
+          h3 Saturday
+        .day-2
+          h3 Sunday
