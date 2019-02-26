@@ -18,7 +18,7 @@ html
           h2#headline A group of Data Scientists, Data Engineers and Machine Learning Engineers in New York City that gather to practice through Kaggle Competitions.
         .content
           .information
-            h2#cta Join Us in Slack!
+            h2#cta Join our Slack
             form(method="POST", action="/invite")#join-form.form
               input(type="email", name="email", autofocus, placeholder=__('ENTER_EMAIL'))#slack-email.field
               if tokenRequired
@@ -27,15 +27,18 @@ html
               if !!recaptchaSiteKey
                 div(class="g-recaptcha", data-sitekey="#{recaptchaSiteKey}")
             p <sub>We do not store your email.</sub>
-          p
-            | See 
-            a(href='https://www.meetup.com/Kaggle-NYC' target='_blank') Meetup.com 
-            | for the next meetup.
-          p All levels are welcome.
-          p
-            | Currently Competing: 
-            a(href='https://www.kaggle.com/c/two-sigma-financial-modeling' target='_blank') Two Sigma stock prediction
-            |  ends January 1, 2019.
+
+            br
+            h2#cta Join Our Meetup
+            a(target="_blank", href="https://www.meetup.com/Kaggle-NYC")
+              img(src="/images/meetup.png", style="width: 100%")
+            p We participate in several Kaggle competitions at a time. Find teammates by attending our meetups!
+            p We are about social learning.
+
+            br
+            h2#cta Thanks to our Sponsors!
+            a(target="_blank", href="https://www.sharpestminds.com")
+              img(src="/images/sharpestminds.png", style="width: 50%")
 
     if !!recaptchaSiteKey
        script(src='https://www.google.com/recaptcha/api.js')
