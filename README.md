@@ -17,3 +17,7 @@ Open localhost:3000 in a browser to see the main page.
 ## Testing
 
 You can use the curl provided in `send-invite.sh` to test the invites are sending.
+
+## Logging in
+
+`ssh -i <pem file> ubuntu@<elastic ip>`
