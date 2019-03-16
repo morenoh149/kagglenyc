@@ -20,4 +20,5 @@ You can use the curl provided in `send-invite.sh` to test the invites are sendin
 
 ## Logging in
 
-`ssh -i <pem file> ubuntu@<elastic ip>`
+`ssh -i <pem file> ubuntu@52.6.145.255`
+Note elastic ip may change in the future
